@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+*{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/david-martin-6NpYOFB3VCI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.title{
+    height: 15vh;
+    font-size: 90px;
+    color: antiquewhite;
+}
+.drumset{
+    background-color: rgba(255,255,255,.5);
+    width: 30vw;
+    height: 70vh;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 3vh;
+}
+.key{
+    background-color: goldenrod;
+    border-radius: 50%;
+    transition: 0.1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.click{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+kbd{
+    font-size: 30px;
+}
+.sound{
+    margin-top: 5px;
+    font-size: 10px;
+}
+.playing{
+    transform: scale(1.1);
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+.footer{
+    height: 5vh;
+    font-size: 25px;
+    color: antiquewhite;
+}
+.github-link{
+    text-decoration: none;
+    color: crimson;
+}
